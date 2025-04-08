@@ -8,7 +8,7 @@ public class Card {
     public String imagePath;
     
     public Card(
-    		String suit, String rank, int value) {
+    	String suit, String rank, int value) {
     	this.suit = suit;
     	this.rank = rank;
     	this.value = value;
