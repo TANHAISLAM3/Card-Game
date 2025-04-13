@@ -84,6 +84,9 @@ public class Level4 {
             return "Black";
         }
     }
+    public void clearHand() {
+	    player.hand.clear();
+	}
     
 	public static void main(String[] args) {
 		Deck deck = new Deck();
