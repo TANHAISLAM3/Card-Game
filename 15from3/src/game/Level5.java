@@ -3,8 +3,6 @@ package game;
 import java.util.*;
 
 public class Level5 {
-	private Player player;
-	
 	
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
