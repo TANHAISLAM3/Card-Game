@@ -10,7 +10,9 @@ public class Level4 {
 	public Level4 (String name) {
 		this.player = new Player(name);
 	}
-	
+	public String getName() {
+	    return player.name; // or player.getName() if name is private in Player
+	}
     public void receiveCard(Card card) {
         player.receiveCard(card);
     }

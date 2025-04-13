@@ -73,6 +73,9 @@ class Player {
             hand.add(card);  // Add the card to the player's hand
         }
     }
+    public String getName() {
+        return this.name;
+    }
 
     // Display the player's hand
     public void displayHand() {
