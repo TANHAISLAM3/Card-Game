@@ -40,6 +40,7 @@ public class Level4 {
 		    }
     }
     
+    
     public int playerBonus() {
         List<Card> hand = new ArrayList<>(player.hand);
         int totalValue = 0;
