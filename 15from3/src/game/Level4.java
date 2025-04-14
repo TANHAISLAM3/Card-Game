@@ -23,6 +23,17 @@ public class Level4 {
     public int handSize() {
         return player.hand.size(); // Method of the player class is mention with a dot
     }
+    public Card getCard(int index) {
+        return player.hand.get(index);
+    }
+
+    public List<Card> copyHand() {
+        return new ArrayList<>(player.hand);
+    }
+
+    public void setHand(List<Card> newHand) {
+        player.hand = newHand;
+    }
     public void selectcards(Deck deck1, Set<Integer> select ) {
 		List <Card> newHand = new ArrayList<>();
 		for (int i =0; i<player.hand.size(); i++) {
@@ -108,5 +119,6 @@ public class Level4 {
 		// TODO Auto-generated method stub
 
 	}
+	
 
 }
