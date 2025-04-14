@@ -80,11 +80,14 @@ class Deck {
 class Player {
     public String name;
     public List<Card> hand = new ArrayList<>();
+    
 
     public Player(String name) {
         this.name = name;
     }
-
+    public List<Card> getHand() {
+        return hand; // Returns the player's hand
+    }
     public void receiveCard(Card card) {
         if (card != null) {
             hand.add(card);
@@ -100,6 +103,13 @@ class Player {
         for (Card card : hand) {
             System.out.println(card);
         }
+    }
+    public int getHandValue() {
+        int total = 0;
+        for (Card card : hand) {
+            total += card.getValue(); // Assuming `Card` has `getValue()` method
+        }
+        return total;
     }
 }
 
