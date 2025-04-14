@@ -17,6 +17,9 @@ public class Level4 {
         player.receiveCard(card);
     }
 
+    public List<Card> getHand() {
+        return player.getHand(); // Use getter to access the hand
+    }
     public void displayHand() {
         player.displayHand();
     }
