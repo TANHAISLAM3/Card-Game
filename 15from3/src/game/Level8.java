@@ -197,7 +197,5 @@ public class Level8 {
                 System.out.println("✅ Round Score: " + roundData.score);
             }
         }
-
-        scanner.close();
     }
 }
